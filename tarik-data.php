@@ -40,7 +40,9 @@
 						while($Response=fgets($Connect, 1024)){
 							$buffer=$buffer.$Response;
 						}
-					} else echo "Koneksi Gagal";
+					} else {
+						echo "Koneksi Gagal";
+					}
 
 					include("parse.php");
 					$buffer = Parse_Data($buffer,"<GetAttLogResponse>","</GetAttLogResponse>");
