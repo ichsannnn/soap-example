@@ -53,10 +53,10 @@
 						$Status = Parse_Data($data,"<Status>","</Status>");
 				?>
 				<tr align="center">
-					<td><?echo $PIN?></td>
-					<td><?=$DateTime?></td>
-					<td><?=$Verified?></td>
-					<td><?=$Status?></td>
+					<td><?php echo $PIN ?></td>
+					<td><?php echo $DateTime ?></td>
+					<td><?php echo $Verified ?></td>
+					<td><?php echo $Status ?></td>
 				</tr>
 			<?php endfor; ?>
 			</table>
