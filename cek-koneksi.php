@@ -23,8 +23,10 @@
       if($_GET["ip"] != ""){
       	$Connect = fsockopen($IP, "80", $errno, $errstr, 1);
       	if($Connect){
-      		echo "Koneksi berhasil";
-      	} else echo "Koneksi Gagal";
+      		echo "Koneksi Berhasil";
+      	} else {
+          echo "Koneksi Gagal";
+        }
       }
     ?>
 </body>
