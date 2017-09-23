@@ -11,9 +11,9 @@
 			if($Key == "") $Key = "0";
 		?>
 		<form action="tarik-data.php">
-			IP Address: <input type="Text" name="ip" value="<?php echo $IP ?>" size=15>
+			IP Address: <input type="Text" name="ip" value="<?=$IP?>" size=15>
 			<BR>
-			Comm Key: <input type="Text" name="key" size="5" value="<?php echo $Key?>">
+			Comm Key: <input type="Text" name="key" size="5" value="<?=$Key?>">
 			<BR><BR>
 			<input type="Submit" value="Download">
 		</form>
