@@ -10,12 +10,12 @@
 			if($IP == "") $IP = "192.168.1.201";
 			if($Key == "") $Key = "0";
 		?>
-		<form action="syn-time.php">
+		<form action="cek-koneksi.php">
 			IP Address: <input type="Text" name="ip" value="<?php echo $IP ?>" size=15>
 			<br>
 			Comm Key: <input type="Text" name="key" size="5" value="<?php echo $Key ?>">
 			<br><br>
-			<input type="Submit" value="Syn Time">
+			<input type="Submit" value="Cek Koneksi">
 		</form>
 		<br>
 
