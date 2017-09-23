@@ -13,8 +13,8 @@
 <a href="upload-sidik-jari.php">Upload Sidik Jari</a><BR><BR><BR>
 
 <a href="syn-time.php">Syncronize Time</a><BR><BR>
+<a href="cek-koneksi.php">Cek Koneksi</a><BR><BR>
 <a href="hapus-user.php">Hapus User</a><BR><BR>
 
 </body>
 </html>
-
