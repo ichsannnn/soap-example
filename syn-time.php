@@ -4,6 +4,7 @@
 	</head>
 	<body bgcolor="#caffcb">
 		<h3>Syncronize Time</h3>
+		<h3><?php echo date('Y-m-d H:i:s') ?></h3>
 		<?php
 			$IP = $_GET["ip"];
 			$Key = $_GET["key"];
