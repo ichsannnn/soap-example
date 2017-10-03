@@ -7,22 +7,17 @@
 		<?php
 			$IP = $_GET["ip"];
 			$Key = $_GET["key"];
-			if($IP == "") $IP = "192.168.1.201";
-			if($Key == "") $Key = "0";
 		?>
 		<form action="cek-koneksi.php">
-			IP Address: <input type="Text" name="ip" value="<?php echo $IP ?>" size=15>
-			<br>
-			Comm Key: <input type="Text" name="key" size="5" value="<?php echo $Key ?>">
-			<br><br>
+			IP Address: <input type="Text" name="ip" size="15" value="<?php echo $IP ?>"><br>
+			Comm Key: <input type="Text" name="key" size="5" value="<?php echo $Key ?>"><br><br>
 			<input type="Submit" value="Cek Koneksi">
 		</form>
 		<br>
-
     <?php
-      if($_GET["ip"] != ""){
-      	$Connect = fsockopen($IP, "80", $errno, $errstr, 1);
-      	if($Connect){
+      if($_GET["ip"] != "") {
+      	$connect = fsockopen($IP, "80", $errno, $errstr, 1);
+      	if($connect) {
       		echo "Koneksi Berhasil";
       	} else {
           echo "Koneksi Gagal";
