@@ -35,10 +35,10 @@
 						$soap_request = "<GetAttLog>
 														<ArgComKey xsi:type=\"xsd:integer\">" . $Key . "</ArgComKey>
 														<Arg>
-														<PIN xsi:type=\"xsd:integer\">11085</PIN>
+														<Date xsi:type=\"xsd:string\">" . date("Y-m-d") . "</Date>
 														</Arg>
 														</GetAttLog>";
-														// <Date xsi:type=\"xsd:string\">".date("Y-m-d")."</Date>
+														// <PIN xsi:type=\"xsd:integer\">11085</PIN>
 						$newLine = "\r\n";
 						fputs($connect, "POST /iWsService HTTP/1.0" . $newLine);
 						fputs($connect, "Content-Type: text/xml" . $newLine);
