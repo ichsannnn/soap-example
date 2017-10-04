@@ -35,7 +35,7 @@
 						$soap_request = "<GetAttLog>
 														<ArgComKey xsi:type=\"xsd:integer\">" . $Key . "</ArgComKey>
 														<Arg>
-														<Date xsi:type=\"xsd:string\">" . date("Y-m-d") . "</Date>
+														<DateTime xsi:type=\"xsd:string\">" . date("Y-m-d H:i:s") . "</DateTime>
 														</Arg>
 														</GetAttLog>";
 														// <PIN xsi:type=\"xsd:integer\">11085</PIN>
